@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.2)
+project(Gallinero)
+set (CMAKE_C_FLAGS "-pthread -lm")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror")
+set(SOURCE_FILES main.c)
+add_executable(Gallinero ${SOURCE_FILES} aux/list.h aux/list.c aux/calc.h aux/calc.c aux/tcp_conection.h aux/tcp_conection.c)
